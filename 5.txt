@@ -1,0 +1,9 @@
+M=imread('D:\study\dip\3\第3-次作业\woman.bmp');
+subplot(1,2,1);
+imshow(M);
+title('woman original');
+thres=graythresh(M);
+I=im2bw(M,thres);
+subplot(1,2,2);
+imshow(I);
+title('woman seg')

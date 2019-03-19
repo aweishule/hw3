@@ -1,0 +1,8 @@
+I=imread('D:\study\dip\3\第3-次作业\woman.bmp');
+I1=histeq(I);
+subplot(1,2,1);
+imhist(I);
+title('original');
+subplot(1,2,2);
+imshow(I1)
+title('processed');

@@ -1,0 +1,23 @@
+
+I=imread('D:\study\dip\3\第3-次作业\lena.bmp');
+subplot(2,2,1);
+imhist(I);
+title('lena histogram');
+
+[A1,map]=imread('D:\study\dip\3\第3-次作业\lena1.bmp');
+B1=ind2gray(A1,map);
+subplot(2,2,2);
+imhist(B1);
+title('lena1 histogram');
+
+[A2,map]=imread('D:\study\dip\3\第3-次作业\lena2.bmp');
+B2=ind2gray(A2,map);
+subplot(2,2,3);
+imhist(B2);
+title('lena2 histogram');
+
+[A3,map]=imread('D:\study\dip\3\第3-次作业\lena4.bmp');
+B3=ind2gray(A3,map);
+subplot(2,2,4);
+imhist(B3);
+title('lena4 histogram');

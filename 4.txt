@@ -1,0 +1,22 @@
+I=imread('D:\study\dip\3\第3-次作业\woman.bmp');
+M=histeq(I);
+[x,y]=size(I);
+I2=I;
+for i=4:x-3
+    for j=4:y-3
+        m3=histeq(I(i-3:i+3,j-3:j+3));
+        I2(i,j)=m3(25);
+    end
+end
+subplot(2,2,1);
+imhist(M);
+title('processed imhist');
+subplot(2,2,2);
+imshow(M);
+title('processed image');
+subplot(2,2,3);
+imhist(I2);
+title('local imhist');
+subplot(2,2,4);
+imshow(I2);
+title('local image');

@@ -1,0 +1,10 @@
+M=imread('D:\study\dip\3\第3-次作业\elain.bmp');
+hgram=imhist(M);
+[A1,map]=imread('D:\study\dip\3\第3-次作业\elain2.bmp');
+I=ind2gray(A1,map);
+N=histeq(I,hgram);
+subplot(1,2,1);
+imshow(N);
+title('match elain2')
+subplot(1,2,2);
+imhist(N);
